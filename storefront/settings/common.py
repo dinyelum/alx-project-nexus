@@ -31,8 +31,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework',
     'drf_yasg',
-    'djoser',
-    'playground',
+    'djoser'
     'app',
     'core',
 ]
