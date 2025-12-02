@@ -16,6 +16,7 @@ djangorestframework-simplejwt = "*"
 drf-yasg = "*"
 gunicorn = "*"
 dj-database-url = "*"
+typing-extensions = "*"
 
 [dev-packages]
 
