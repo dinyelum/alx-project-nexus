@@ -1,16 +1,59 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JoeStores API</title>
+    <title>E-Commerce API</title>
+    <link rel="stylesheet" href="{% static 'core/styles.css' %}">
 </head>
 
 <body>
-    <div>
-        <a href="./store">Store API</a>
-    </div>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🛒</span>
+            <span>E-Commerce API</span>
+        </div>
+        <p class="tagline">A powerful RESTful API for e-commerce applications with full product, order, and user
+            management capabilities.</p>
+    </header>
+
+    <main>
+        <div class="api-info">
+            <h2>API Overview</h2>
+            <p>Welcome to the E-Commerce API. This service provides a complete set of endpoints for building e-commerce
+                applications. You can manage products, inventory, orders, customers, and more through this RESTful
+                interface.</p>
+            <p>To get started, explore the API root or view the interactive Swagger documentation for detailed endpoint
+                information and testing capabilities.</p>
+        </div>
+
+        <div class="links-container">
+            <a href="/store/" class="api-link" id="api-root-link">
+                <div class="link-icon">🔗</div>
+                <div class="link-title">API Root</div>
+                <div class="link-desc">Access the main API endpoint to explore available resources and endpoints.</div>
+                <div class="link-arrow">Browse API →</div>
+            </a>
+
+            <a href="/swagger/" class="api-link" id="swagger-link">
+                <div class="link-icon">📚</div>
+                <div class="link-title">API Documentation</div>
+                <div class="link-desc">Interactive Swagger documentation with full API reference and testing tools.
+                </div>
+                <div class="link-arrow">View Docs →</div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>E-Commerce API v1.0 • Designed for developers</p>
+            <div class="api-status">API Status: Operational</div>
+            <p style="margin-top: 1rem; font-size: 0.9rem;">&copy; 2025 E-Commerce API. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
