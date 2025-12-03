@@ -16,6 +16,10 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS.append("debug_toolbar")
 MIDDLEWARE.insert(0, "debug_toolbar.middleware.DebugToolbarMiddleware")
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # if you have a global static folder
+]
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',

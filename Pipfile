@@ -17,6 +17,7 @@ drf-yasg = "*"
 gunicorn = "*"
 dj-database-url = "*"
 typing-extensions = "*"
+whitenoise = "*"
 
 [dev-packages]
 
